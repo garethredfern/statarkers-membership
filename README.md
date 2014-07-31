@@ -1,6 +1,6 @@
 Statarkers Membership
 =====================
-This is a set of base files to get you going with Statamic membership. The can be used easily with the [Statarkers Theme](https://github.com/statamicthemes/statarkers-theme) but it is not required.
+This is a set of base files to get you going with Statamic membership. They can be used easily with the [Statarkers Theme](https://github.com/statamicthemes/statarkers-theme) but it is not required.
 
 ## Installing
 1. Replace the member folder in `_config/bundles` with the member folder provided.
