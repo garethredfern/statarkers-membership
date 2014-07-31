@@ -1,0 +1,18 @@
+{{ member:login_form attr="class:form|id:form" return="/member/dashboard" allow_request_return="true" }}
+  {{ if error }}
+    <p class="error">{{ error }}</p>
+  {{ endif }}
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" value="{{ old_values:username }}" required>
+  </div>
+
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required>
+  </div>
+
+  <div>
+    <button type="submit" class="btn">Login</button>
+  </div>
+{{ /member:login_form }}

@@ -1,0 +1,55 @@
+{{ member:register_form attr="class:form|id:form" return="/member/dashboard" allow_request_return="true" }}
+  {{ if error }}
+    <div class="error">{{ error }}</div>
+  {{ endif }}
+
+  <div>
+    <label for="first_name">First Name:</label>
+    <input type="text" name="first_name" id="first_name" value="{{ old_values:first_name }}" placeholder="Jamie">
+    {{ if field_errors:first_name }}
+      <small class="error">{{ field_errors:first_name }}</small>
+    {{ endif }}
+  </div>
+
+  <div>
+    <label for="last_name">Last Name:</label>
+    <input type="text" name="last_name" id="last_name" value="{{ old_values:last_name }}" placeholder="Smith">
+    {{ if field_errors:last_name }}
+      <small class="error">{{ field_errors:last_name }}</small>
+    {{ endif }}
+  </div>
+
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" value="{{ old_values:username }}" placeholder="(3-20 characters)" required>
+    {{ if field_errors:username }}
+      <small class="error">{{ field_errors:username }}</small>
+    {{ endif }}
+  </div>
+
+  <div>
+    <label for="email">Email:</label>
+    <input type="text" name="email" id="email" value="{{ old_values:email }}" placeholder="email@example.com" required>
+    {{ if field_errors:email }}
+      <small class="error">{{ field_errors:email }}</small>
+    {{ endif }}
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required>
+    {{ if field_errors:password }}
+      <small class="error">{{ field_errors:password }}</small>
+    {{ endif }}
+  </div>
+  <div>
+    <label for="password_confirmation">Password Again:</label>
+    <input type="password" name="password_confirmation" id="password_confirmation" required>
+    {{ if field_errors:password_confirmation }}
+      <small class="error">{{ field_errors:password_confirmation }}</small>
+    {{ endif }}
+  </div>
+
+  <div>
+    <button type="submit" class="btn">Sign Me Up</button>
+  </div>
+{{ /member:register_form }}

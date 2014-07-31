@@ -1,0 +1,65 @@
+fields:
+  username:
+    type: text
+    display: Username
+    required: true
+    validate:
+      length: [ 3, 20 ]
+    error_messages:
+      required: "Username is required."
+      validate: "Username must be between 3 and 20 characters long."
+    instructions: "Must be between 3 and 20 characters long."
+  email:
+    type: text
+    display: Email
+    required: true
+    validate: email
+    error_messages:
+      required: "Email is required."
+      validate: "The email address entered doesn't look like an email address."
+  first_name:
+    type: text
+    required: true
+    display: First Name
+    error_messages:
+      required: "First name is required."
+  last_name:
+    type: text
+    required: true
+    display: Last Name
+    error_messages:
+      required: "Last name is required."
+  password:
+    type: password
+    required: true
+    display: Password
+    validate:
+      length: 5
+    error_messages:
+      required: "Password is required."
+      validate: "Password needs to be at least 5 characters long."
+    instructions: "Must be at least 5 characters long."
+  password_confirmation:
+    type: password
+    required: true
+    display: Password Confirmation
+    save_value: false
+    validate:
+      length: 5
+    error_messages:
+      required: "Password is required."
+      validate: "Passwords do not match."
+    instructions: "Passwords must match."
+  show_password:
+    type: show_password
+    save_value: false
+  roles:
+    type: checkboxes
+    display: Roles
+    options:
+      member: Member
+      admin: Admin
+    instructions: "Enabling roles gives users different abilities."
+  biography:
+    type: markitup
+    display: Biography

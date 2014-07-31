@@ -1,0 +1,10 @@
+# the homepage for logged in members, one of the places a member can be sent after login/registration
+member_home: /member/dashboard
+
+# a list of roles to automatically assign to new members
+new_member_roles: [ member ]
+
+# functionality available to different roles
+role_definitions:
+  edit_other_users: [ admin ]
+  edit_other_user_roles: [ admin ]

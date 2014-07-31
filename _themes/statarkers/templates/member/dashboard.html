@@ -1,0 +1,25 @@
+{{ if logged_in }}
+<main role="main">
+  <h2>Dashboard</h2>
+  {{ current_member }}
+  <p>Hi {{ first_name }}, If you need to update your details, <a href="/member/update" class="callout">please do</a>.</p>
+  {{ /current_member }}
+  <div class="dashboard">
+  {{ member:profile }}
+    {{ if no_results }}
+      <p class="error">Could not find a profile for member <em>{{ segment_2|sanitize }}</em>.</p>
+    {{ else }}
+      <dl class="profile">
+        <dt>Name</dt>
+        <dd>{{ first_name }} {{ last_name }}</dd>
+
+        <dt>Email</dt>
+        <dd><a href="mailto:{{ email }}">{{ email }}</a></dd>
+      </dl>
+    {{ endif }}
+  {{ /member:profile }}
+  </div>
+</main><!-- END role="main" -->
+{{ else }}
+  {{ redirect url="/member/login" }}
+{{ endif }}
