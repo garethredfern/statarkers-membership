@@ -13,7 +13,7 @@ Once you have the routes set up you do not need to have content pages set up in 
 
 Visit the following pages to see the example pages (taken from the routes.yaml file):
 
-- /member/login : member/login
-- /member/update: member/update
-- /member/register : member/register
-- /member/dashboard :  member/dashboard
+- /member/login
+- /member/update:
+- /member/register
+- /member/dashboard
