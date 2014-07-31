@@ -11,7 +11,7 @@ This is a set of base files to get you going with Statamic membership. They can 
 
 Once you have the routes set up you do not need to have content pages set up in your main `_content` folder. For more information on routes see the [Statamic documentation](http://statamic.com/learn/advanced-features/routes).
 
-Visit the following pages to see the example pages (taken from the routes.yaml file):
+Visit the following pages in your site to see the examples (taken from the routes.yaml file):
 
 - /member/login
 - /member/update:
