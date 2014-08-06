@@ -1,6 +1,10 @@
 <main role="main">
   <h2>Register</h2>
   <div class="login-form">
-    {{ theme:partial src="member/_register_form" }}
+    {{ if !logged_in }}
+      {{ theme:partial src="member/_register_form" }}
+    {{ else }}
+      {{ redirect url="/member/dashboard" }}
+    {{ endif }}
   </div>
 </main><!-- END role="main" -->
