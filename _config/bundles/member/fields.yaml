@@ -19,36 +19,24 @@ fields:
       validate: "The email address entered doesn't look like an email address."
   first_name:
     type: text
-    required: true
     display: First Name
-    error_messages:
-      required: "First name is required."
   last_name:
     type: text
-    required: true
     display: Last Name
-    error_messages:
-      required: "Last name is required."
   password:
     type: password
-    required: true
     display: Password
     validate:
       length: 5
-    error_messages:
-      required: "Password is required."
-      validate: "Password needs to be at least 5 characters long."
+    error_messages: "Password needs to be at least 5 characters long."
     instructions: "Must be at least 5 characters long."
   password_confirmation:
     type: password
-    required: true
     display: Password Confirmation
     save_value: false
     validate:
       length: 5
-    error_messages:
-      required: "Password is required."
-      validate: "Passwords do not match."
+    error_messages: "Passwords do not match."
     instructions: "Passwords must match."
   show_password:
     type: show_password
