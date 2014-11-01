@@ -8,3 +8,6 @@ new_member_roles: [ member ]
 role_definitions:
   edit_other_users: [ admin ]
   edit_other_user_roles: [ admin ]
+
+# Go where when member has clicked the `logout` button? Why, back to the login page, of course!
+logout_url: /member/login
