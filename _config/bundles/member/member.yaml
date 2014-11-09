@@ -19,5 +19,6 @@ reset_password_url: /member/reset-password
 reset_password_age_limit: 20
 
 # email templates
-reset_password_text_email:
-reset_password_html_email:
+reset_password_subject: Reset Your Password
+reset_password_text_email: emails/reset_password_text
+reset_password_html_email: emails/reset_password_html

@@ -10,11 +10,13 @@ routes:
   # Visiting example.com/contact-us will...
   # load the /templates/contact.html template
 
-  # /blog/categories : all-categories
+  #/blog/categories : all-categories
   /member/login : member/login
   /member/update: member/update
   /member/register : member/register
   /member/dashboard :  member/dashboard
+  /member/forgot-password :  member/forgot_password
+  /member/reset-password :  member/reset_password
 
 
   # ADVANCED ROUTE EXAMPLE
