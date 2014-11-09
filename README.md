@@ -10,7 +10,7 @@ This is a set of base files to get you going with Statamic membership. They can 
 5. Replace/copy the `_config/routes.yaml` file into your `_config folder`.
 6. Add the following settings to you your `settings.yaml` file.
   - `_email_handler:`
-  - `_email_sender: example@example.com # change this to your email` 
+  - `_email_sender: example@example.com #change this to your email` 
 
 Once you have the routes set up you do not need to have content pages set up in your main `_content` folder. For more information on routes see the [Statamic documentation](http://statamic.com/learn/advanced-features/routes).
 
