@@ -7,8 +7,9 @@ This is a set of base files to get you going with Statamic membership. They can 
 2. Replace the member folder in `_config/bundles` with the member folder provided.
 3. Add the member folder into your theme partials folder (`_themes/statarkers/partials`).
 4. Add the member folder into your theme templates folder (`_themes/statarkers/templates`).
-5. Replace/copy the `_config/routes.yaml` file into your `_config folder`.
-6. Add the following settings to you your `settings.yaml` file.
+5. Add the emails folder into your theme templates folder (`_themes/statarkers/templates`).
+6. Replace/copy the `_config/routes.yaml` file into your `_config folder`.
+7. Add the following settings to you your `settings.yaml` file.
   - `_email_handler:`
   - `_email_sender: example@example.com #change this to your email` 
 
