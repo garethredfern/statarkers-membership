@@ -17,6 +17,7 @@ routes:
   /member/dashboard :  member/dashboard
   /member/forgot-password :  member/forgot_password
   /member/reset-password :  member/reset_password
+  /member/password-updated : member/password_updated
   /member/email-sent :  member/email_sent
 
 
