@@ -4,12 +4,12 @@ title: Update
 
 {{ if logged_in }}
 <main role="main">
-  <h2>Update Your Profile</h2>
+  <h2 class="main__heading">Update Your Profile</h2>
   <div class="login-form">
     {{ theme:partial src="member/_update_form" }}
   </div>
   <p>Back to your <a href="/member/dashboard" class="callout">dashboard</a>.</p>
-</main><!-- END role="main" -->
+</main>
 {{ else }}
   {{ redirect url="/member/login" }}
 {{ endif }}

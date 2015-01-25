@@ -3,7 +3,7 @@ title: Register
 ---
 
 <main role="main">
-  <h2>Register</h2>
+  <h2 class="main__heading">Register</h2>
   <div class="login-form">
     {{ if !logged_in }}
       {{ theme:partial src="member/_register_form" }}
@@ -11,4 +11,4 @@ title: Register
       {{ redirect url="/member/dashboard" }}
     {{ endif }}
   </div>
-</main><!-- END role="main" -->
+</main>

@@ -4,7 +4,7 @@ title: Dashboard
 
 {{ if logged_in }}
 <main role="main">
-  <h2>Dashboard</h2>
+  <h2 class="main__heading">Dashboard</h2>
   {{ current_member }}
   <p>Hi {{ first_name }}, If you need to update your details, <a href="/member/update" class="callout">please do</a>.</p>
   {{ /current_member }}
@@ -24,7 +24,7 @@ title: Dashboard
     {{ endif }}
   {{ /member:profile }}
   </div>
-</main><!-- END role="main" -->
+</main>
 {{ else }}
   {{ redirect url="/member/login" }}
 {{ endif }}

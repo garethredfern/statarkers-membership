@@ -1,5 +1,8 @@
-{{ member:register_form attr="class:form|id:form" return="/member/dashboard" allow_request_return="true" }}
-
+{{ member:register_form
+  attr="class:form|id:form"
+  return="/member/dashboard"
+  allow_request_return="true"
+}}
   {{ if error }}
   <div class="alert alert--danger" id="message">
     <p>{{ error }}</p>
