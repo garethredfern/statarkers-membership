@@ -1,7 +1,14 @@
-{{ member:login_form attr="class:form|id:form" return="/member/dashboard" allow_request_return="true" }}
+{{ member:login_form
+  attr="class:form|id:form"
+  return="/member/dashboard"
+  allow_request_return="true"
+}}
   {{ if error }}
-    <p class="error">{{ error }}</p>
+  <div class="alert alert--danger" id="message">
+    <p>{{ error }}</p>
+  </div><!-- END .alert -->
   {{ endif }}
+
   <div>
     <label for="username">Username:</label>
     <input type="text" name="username" id="username" value="{{ old_values:username }}" required>

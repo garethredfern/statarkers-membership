@@ -1,6 +1,13 @@
 {{ member:register_form attr="class:form|id:form" return="/member/dashboard" allow_request_return="true" }}
+
   {{ if error }}
-    <div class="error">{{ error }}</div>
+  <div class="alert alert--danger" id="message">
+    <p>{{ error }}</p>
+  </div><!-- END .errors -->
+  {{ elseif success }}
+  <div class="alert alert--success" id="message">
+    <p>{{ success }}</p>
+  </div><!-- END .success -->
   {{ endif }}
 
   <div>
