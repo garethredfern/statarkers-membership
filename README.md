@@ -11,7 +11,11 @@ This is a set of base files to get you going with Statamic membership. They can 
 6. Replace/copy the `_config/routes.yaml` file into your `_config folder`.
 7. Add the following settings to you your `settings.yaml` file.
   - `_email_handler:`
-  - `_email_sender: example@example.com #change this to your email` 
+  - `_email_sender: example@example.com #change this to your email`
+8. Add the following settings to your _config/bundles/member/member.yaml file.
+  - `reset_password_subject: Reset Your Password`
+  - `reset_password_text_email: emails/reset_password_text`
+  - `reset_password_html_email: emails/reset_password_html`
 
 Once you have the routes set up you do not need to have content pages set up in your main `_content` folder. For more information on routes see the [Statamic documentation](http://statamic.com/learn/advanced-features/routes).
 
