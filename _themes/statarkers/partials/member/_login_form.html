@@ -1,23 +1,23 @@
 {{ member:login_form
-  attr="class:form|id:form"
-  return="/member/dashboard"
-  allow_request_return="true"
+    attr="class:form|id:form"
+    return="/member/dashboard"
+    allow_request_return="true"
 }}
-  {{ if error }}
-  <div class="alert alert--danger" id="message">
+{{ if error }}
+<div id="message">
     <p>{{ error }}</p>
-  </div><!-- END .alert -->
-  {{ endif }}
+</div><!-- END .alert -->
+{{ endif }}
 
-  <div>
+<div>
     <label for="username">Username:</label>
     <input type="text" name="username" id="username" value="{{ old_values:username }}" required>
-  </div>
+</div>
 
-  <div>
+<div>
     <label for="password">Password:</label>
     <input type="password" name="password" id="password" required>
-  </div>
+</div>
 
-  <button type="submit" class="btn">Login</button>
+<button type="submit">Login</button>
 {{ /member:login_form }}

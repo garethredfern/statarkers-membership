@@ -4,27 +4,27 @@ title: Dashboard
 
 {{ if logged_in }}
 <main role="main">
-  <h2 class="main__heading">Dashboard</h2>
-  {{ current_member }}
-  <p>Hi {{ first_name }}, If you need to update your details, <a href="/member/update" class="callout">please do</a>.</p>
-  {{ /current_member }}
-  <div class="dashboard">
-  {{ member:profile }}
-    {{ if no_results }}
-      <p class="error">Could not find a profile for member <em>{{ segment_2|sanitize }}</em>.</p>
-    {{ else }}
-      <dl class="profile">
-        <dt>Name</dt>
-        <dd>{{ first_name }} {{ last_name }}</dd>
+    <h2>Dashboard</h2>
+    {{ current_member }}
+    <p>Hi {{ first_name }}, If you need to update your details, <a href="/member/update">please do</a>.</p>
+    {{ /current_member }}
+    <div>
+        {{ member:profile }}
+        {{ if no_results }}
+        <p>Could not find a profile for member <em>{{ segment_2|sanitize }}</em>.</p>
+        {{ else }}
+        <dl>
+            <dt>Name</dt>
+            <dd>{{ first_name }} {{ last_name }}</dd>
 
-        <dt>Email</dt>
-        <dd><a href="mailto:{{ email }}">{{ email }}</a></dd>
-      </dl>
-        <a href="{{ member:logout_url }}" class="btn">Log Out</a>
-    {{ endif }}
-  {{ /member:profile }}
-  </div>
+            <dt>Email</dt>
+            <dd><a href="mailto:{{ email }}">{{ email }}</a></dd>
+        </dl>
+        <a href="{{ member:logout_url }}">Log Out</a>
+        {{ endif }}
+        {{ /member:profile }}
+    </div>
 </main>
 {{ else }}
-  {{ redirect url="/member/login" }}
+{{ redirect url="/member/login" }}
 {{ endif }}
