@@ -6,7 +6,7 @@ title: Dashboard
 <main role="main">
     <h2>Dashboard</h2>
     {{ current_member }}
-    <p>Hi {{ first_name }}, If you need to update your details, <a href="/member/update">please do</a>.</p>
+    <p>Hi {{ if first_name }}{{ first_name }}{{ else }}{{ username }}{{ endif }}, If you need to update your details, <a href="/member/update">please do</a>.</p>
     {{ /current_member }}
     <div>
         {{ member:profile }}
